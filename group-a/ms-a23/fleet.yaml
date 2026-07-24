@@ -1,5 +1,1 @@
 defaultNamespace: fanout-ns-a
-helm:
-  chart: ../chart
-  values:
-    name: ms-a23
