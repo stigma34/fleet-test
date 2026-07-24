@@ -1,0 +1,5 @@
+defaultNamespace: fanout-ns-b
+helm:
+  chart: ../chart
+  values:
+    name: ms-b05

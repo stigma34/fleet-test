@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector: {matchLabels: {app: {{ .Values.name }}}}
+  template:
+    metadata: {labels: {app: {{ .Values.name }}}}
+    spec:
+      containers:
+      - name: pause
+        image: rancher/mirrored-pause:3.6
